@@ -1,5 +1,5 @@
-<button style="margin-bottom: 15px; margin-left: 10px;" (click)="changeUser()" mat-button mat-raised-button color="primary">Change User</button>
 
-<button style="margin-bottom: 15px; margin-left: 10px;" (click)="counter()" mat-button mat-raised-button color="warn">Counter</button>
+<app-life-child [data]="obj"></app-life-child>
 
-<app-life-child [dataFromParent]="data" [count]="count"></app-life-child>
+<button (click)="updateName()" mat-button mat-raised-button color="accent">Change Name</button>
+

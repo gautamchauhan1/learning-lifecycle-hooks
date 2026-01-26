@@ -9,15 +9,14 @@ export class LifeParentComponent {
 
   constructor(){}
   
-  data: string = 'user 1';
-  count: number = 1;
 
-  changeUser(){
-    this.data = 'This is user 2'
-  }
+  obj= {name: 'old Name'};
 
-  counter(){
-    this.count++;
+  updateName(){
+
+    this.obj.name= 'new Name'; // object reference (address) is same.
+
+    // this.obj= {name: 'new Name'}; // object reference is changed. 
   }
 
 }
