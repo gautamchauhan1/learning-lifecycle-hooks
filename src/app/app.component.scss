@@ -1,0 +1,23 @@
+.nav-btn {
+  background: rgba(0, 2, 0, 0.933);
+  border: 2px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+  background-color: rgba(67, 3, 3, 0.3);
+  transform: translateY(-2px); /* Thoda upar uthega */
+  color: black;
+}
+
+div{
+    margin: 15px auto;
+    text-align: center;
+}
