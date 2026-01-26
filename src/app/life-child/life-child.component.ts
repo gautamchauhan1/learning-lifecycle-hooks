@@ -1,17 +1,20 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-life-child',
   templateUrl: './life-child.component.html',
   styleUrls: ['./life-child.component.scss']
 })
-export class LifeChildComponent implements OnChanges {
+export class LifeChildComponent implements OnChanges, OnInit {
 
   @Input() dataFromParent: string = '';
   @Input() count!: number;
 
   constructor(){
     console.log('This is Constructor', this.dataFromParent);
+  }
+  ngOnInit(): void {
+    console.log('This is ngOnInit: ', this.dataFromParent);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
