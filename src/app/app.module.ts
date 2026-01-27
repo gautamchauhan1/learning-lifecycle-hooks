@@ -8,13 +8,15 @@ import { LifeChildComponent } from './life-child/life-child.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { Child2Component } from './child2/child2.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LifeParentComponent,
-    LifeChildComponent
+    LifeChildComponent,
+    Child2Component
   ],
   imports: [
     BrowserModule,

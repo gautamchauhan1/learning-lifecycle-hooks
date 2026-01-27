@@ -1,5 +1,8 @@
 
-<app-life-child [data]="obj"></app-life-child>
+<app-life-child [data]="projectedText">
+    <app-child2 [child2Data]="count"></app-child2>
 
-<button (click)="updateName()" mat-button mat-raised-button color="accent">Change Name</button>
+    <h2>{{projectedText}}</h2>
+    <button (click)="changeContent()" mat-button color="primary" mat-raised-button>Change Content</button>
+</app-life-child>
 

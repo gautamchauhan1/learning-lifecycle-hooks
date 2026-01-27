@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-life-parent',
@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 export class LifeParentComponent {
 
   constructor(){}
-  
 
-  obj= {name: 'old Name'};
+  projectedText = '';
+  count: number =1;
 
-  updateName(){
-
-    this.obj.name= 'new Name'; // object reference (address) is same.
-
-    // this.obj= {name: 'new Name'}; // object reference is changed. 
+  changeContent(){
+    this.projectedText = ('Content has been Changed =' + this.count++);
   }
+
+ 
+  
 
 }
