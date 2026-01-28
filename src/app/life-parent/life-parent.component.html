@@ -1,6 +1,8 @@
 
-<input #myInput [(ngModel)]="parentMessage" placeholder="Type parent message" />
-<br> <br>
-<app-life-child [message]="parentMessage">
-</app-life-child>
 
+<button mat-button mat-flat-button color="accent" (click)="isInvisible = !isInvisible">{{isInvisible? 'Destroy Component' : 'Create Component'}}</button>
+
+
+<div *ngIf="isInvisible">
+<app-life-child></app-life-child>
+</div>
