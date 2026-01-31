@@ -1,1 +1,10 @@
-<h4>Timer starts when child component is created : {{count}}</h4>
+<!-- setInterval and clearInterval -->
+<h4> setInterval: Timer starts when child component is created : {{count}}</h4>
+
+<!-- Manual Subscription -->
+
+<h4>Manual Subscription: Observable subscription value: {{manualVal}}</h4>
+
+<!-- Async Pipe [automatically subscribe and unsubscribe]-->
+
+<h4>Async Pipe: {{dataStream$ | async}}</h4>
